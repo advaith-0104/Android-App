@@ -2,32 +2,56 @@
 
 /**
  * ------------------------------------------------------------------------
- * FIFA Match Explorer - Core Application Logic for Single-HTML-File App
+ * FIFA Match Explorer - Core Logic for 4-Page Single-HTML-File App
  * ------------------------------------------------------------------------
- * This script is architected to power a multi-page experience within a
- * single HTML file, specifically for a Cordova environment targeting
- * Android 15. It handles initialization, page navigation, data fetching,
- * and dynamic content rendering.
+ * CRITICAL REFACTOR: This script manages a 4-page structure within a
+ * single HTML file for a Cordova environment on Android 15. It ensures
+ * continuous background audio playback and adheres to the specified SPA-like
+ * navigation model.
  * ------------------------------------------------------------------------
  */
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    console.log('Device is ready. Application initializing...');
+    console.log('[INFO] deviceready event fired. Application initializing...');
+
+    // --- Audio Controller ---
+    const audio = {
+        player: document.getElementById('background-audio'),
+        isPlaying: false,
+        play: function() {
+            if (this.player && this.player.paused) {
+                this.player.play().then(() => {
+                    this.isPlaying = true;
+                    console.log('[SUCCESS] Background audio started successfully.');
+                }).catch(error => {
+                    console.error('[ERROR] Audio playback failed:', error);
+                });
+            } else {
+                 console.log('[INFO] Audio is already playing.');
+            }
+        },
+        init: function() {
+            console.log('[INFO] Initializing audio...');
+            // Play is initiated by the first user interaction (splash screen click)
+            // This complies with modern browser autoplay policies.
+            this.player.load();
+        }
+    };
 
     // --- Configuration & State ---
     const config = {
-        api: { matches: 'matches.json', rosters: 'rosters.json' },
+        api: { matches: './matches.json', rosters: './rosters.json' },
         timezones: {
             'IST': 'Asia/Kolkata',
-            'USA Eastern': 'America/New_York',
-            'USA Central': 'America/Chicago',
-            'USA Mountain': 'America/Denver',
-            'USA Pacific': 'America/Los_Angeles',
-            'Australia': 'Australia/Sydney',
-            'Japan': 'Asia/Tokyo',
-            'UTC': 'UTC'
+            'EST': 'America/New_York',
+            'CST': 'America/Chicago',
+            'MST': 'America/Denver',
+            'PST': 'America/Los_Angeles',
+            'GMT': 'UTC',
+            'AEST': 'Australia/Sydney',
+            'JST': 'Asia/Tokyo'
         }
     };
 
@@ -44,54 +68,79 @@ function onDeviceReady() {
             splash: document.getElementById('page-splash'),
             matches: document.getElementById('page-matches'),
             details: document.getElementById('page-details'),
+            roster: document.getElementById('page-roster'),
         },
         logoContainer: document.querySelector('.logo-container'),
         matchList: document.querySelector('.match-list'),
         detailsTitle: document.getElementById('details-title'),
         detailsContent: document.getElementById('details-content'),
         viewRosterBtn: document.getElementById('view-roster-btn'),
-        rosterModal: document.getElementById('roster-modal'),
-        rosterContent: document.getElementById('roster-content'),
+        rosterPageContent: document.getElementById('roster-page-content'),
+        backToDetailsBtn: document.getElementById('back-to-details-btn')
     };
 
     // --- Global Page Navigation ---
-    window.showPage = async function(pageId, options = {}) {
-        console.log(`Navigating to: ${pageId}`);
+    window.showPage = async function(pageId, dataId = null) {
+        console.log(`[NAV] Attempting to navigate to: ${pageId} with dataID: ${dataId}`);
         
-        // Hide all pages before showing the target one
+        state.currentMatchId = dataId || state.currentMatchId;
+
         Object.values(dom.pages).forEach(page => page.classList.remove('active'));
 
-        const targetPage = dom.pages[pageId.replace('page-', '')];
+        const targetPageKey = pageId.replace('page-', '');
+        const targetPage = dom.pages[targetPageKey];
+
         if (targetPage) {
             targetPage.classList.add('active');
+            console.log(`[NAV_SUCCESS] Page displayed: ${pageId}`);
         } else {
-            console.error(`Navigation Error: Page "${pageId}" not found.`);
+            console.error(`[NAV_ERROR] Page "${pageId}" not found in DOM cache.`);
             return;
         }
 
         // Handle page-specific logic
-        if (pageId === 'page-matches' && !state.isDataFetched.matches) {
-            await fetchData('matches');
-            renderMatchList();
-        } else if (pageId === 'page-details' && options.matchId) {
-            state.currentMatchId = options.matchId;
-            if (!state.isDataFetched.matches) await fetchData('matches');
-            renderMatchDetails();
+        switch(pageId) {
+            case 'page-matches':
+                if (!state.isDataFetched.matches) await fetchData('matches');
+                renderMatchList();
+                break;
+            case 'page-details':
+                if (!state.currentMatchId) {
+                    console.error('[ERROR] showPage('page-details') called without a matchID.');
+                    showPage('page-matches'); // Fallback
+                    return;
+                }
+                if (!state.isDataFetched.matches) await fetchData('matches');
+                renderMatchDetails();
+                break;
+            case 'page-roster':
+                if (!state.currentMatchId) {
+                    console.error('[ERROR] showPage('page-roster') called without a matchID.');
+                    showPage('page-matches'); // Fallback
+                    return;
+                }
+                if (!state.isDataFetched.rosters) await fetchData('rosters');
+                renderRosterPage();
+                break;
         }
     };
 
     // --- Data Fetching ---
     async function fetchData(dataType) {
-        if (state.isDataFetched[dataType]) return;
+        if (state.isDataFetched[dataType]) {
+            console.log(`[CACHE] Using cached ${dataType} data.`);
+            return;
+        }
         try {
-            console.log(`Fetching ${dataType} data...`);
+            console.log(`[FETCH] Fetching ${dataType} data from ${config.api[dataType]}...`);
             const response = await fetch(config.api[dataType]);
             if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
             state[dataType] = await response.json();
             state.isDataFetched[dataType] = true;
-            console.log(`${dataType} data fetched successfully.`);
+            console.log(`[FETCH_SUCCESS] ${dataType} data fetched successfully.`);
         } catch (error) {
-            console.error(`Failed to fetch ${dataType}:`, error);
+            console.error(`[FETCH_ERROR] Failed to fetch ${dataType}:`, error);
+            state.isDataFetched[dataType] = false; // Allow retry
         }
     }
 
@@ -103,70 +152,71 @@ function onDeviceReady() {
             const card = document.createElement('div');
             card.className = 'match-card';
             card.innerHTML = `<h4>${match.homeTeam} vs ${match.awayTeam}</h4><p>${match.date}</p>`;
-            card.onclick = () => showPage('page-details', { matchId: match.matchNumber });
+            card.onclick = () => showPage('page-details', match.matchNumber);
             dom.matchList.appendChild(card);
         });
-        console.log('Match list rendered.');
+        console.log(`[RENDER] Match list rendered with ${matches.length} items.`);
     }
 
     function renderMatchDetails() {
         const match = (state.matches.matches || []).find(m => m.matchNumber === state.currentMatchId);
-        if (!match) return;
-
+        if (!match) {
+             console.error(`[RENDER_ERROR] No match found for ID: ${state.currentMatchId}`);
+             return;
+        }
         dom.detailsTitle.textContent = `${match.homeTeam} vs ${match.awayTeam}`;
         const timeList = Object.entries(config.timezones).map(([label, zone]) => {
-            try {
-                const date = new Date(`${match.date} ${match.time || '00:00'} UTC`);
-                const time = date.toLocaleTimeString('en-US', { timeZone: zone, hour: '2-digit', minute: '2-digit' });
-                return `<li><strong>${label}:</strong> ${time}</li>`;
-            } catch (e) {
-                return `<li><strong>${label}:</strong> Invalid Time</li>`;
-            }
+             const time = new Date(`${match.date} ${match.time || '00:00'} UTC`).toLocaleTimeString('en-US', { timeZone: zone, hour: '2-digit', minute: '2-digit' });
+             return `<li><strong>${label}:</strong> ${time}</li>`;
         }).join('');
-        dom.detailsContent.innerHTML = `<p><strong>Stadium:</strong> ${match.stadium}</p><ul>${timeList}</ul>`;
-        console.log('Match details rendered.');
+        dom.detailsContent.innerHTML = `<p><strong>Stadium:</strong> ${match.stadium} (${match.stadiumCountry})</p><ul>${timeList}</ul>`;
+        dom.viewRosterBtn.onclick = () => showPage('page-roster', state.currentMatchId);
+        console.log(`[RENDER] Match details rendered for match ID: ${state.currentMatchI THINK this is a bugfixd}.`);
     }
 
-    async function renderRoster() {
-        if (!state.isDataFetched.rosters) await fetchData('rosters');
+    function renderRosterPage() {
         const match = (state.matches.matches || []).find(m => m.matchNumber === state.currentMatchId);
-        if (!match) return;
-        
+        if (!match) {
+            console.error(`[RENDER_ERROR] Cannot render roster, no match found for ID: ${state.currentMatchId}`);
+            return;
+        }
         const getTeamRosterHTML = (teamName) => {
-            const teamKey = teamName.toUpperCase().replace(' ', ' '); // Adjust key if needed
+            const teamKey = teamName.toUpperCase().replace(' ','');
             const roster = state.rosters[teamKey];
-            if (!roster) return '<p>Roster not available.</p>';
+            if (!roster) return `<p>Roster for ${teamName} not available.</p>`;
             const playing11 = (roster.playing11 || []).map(p => `<li>${p}</li>`).join('');
             const subs = (roster.substitutes || []).map(p => `<li>${p}</li>`).join('');
             return `<h4>${teamName}</h4><h5>Playing 11</h5><ul>${playing11}</ul><h5>Substitutes</h5><ul>${subs}</ul>`;
         };
-
-        dom.rosterContent.innerHTML = getTeamRosterHTML(match.homeTeam) + '<hr>' + getTeamRosterHTML(match.awayTeam);
-        dom.rosterModal.classList.add('active');
-        console.log('Roster rendered.');
+        dom.rosterPageContent.innerHTML = getTeamRosterHTML(match.homeTeam) + '<hr>' + getTeamRosterHTML(match.awayTeam);
+        console.log(`[RENDER] Roster page rendered for match ID: ${state.currentMatchId}.`);
     }
 
-    // --- Event Listeners ---
-    function initEventListeners() {
-        // Splash Screen Transition
+    // --- Event Listeners & Initialization ---
+    function init() {
+        console.log('[INIT] Initializing application and event listeners.');
+        
+        // 1. Initialize Audio
+        audio.init();
+
+        // 2. Splash Screen Logic
         dom.logoContainer.addEventListener('click', () => {
-            console.log('Splash screen transition initiated.');
+            console.log('[EVENT] Splash screen clicked. Starting transition and audio.');
+            // Play audio on first user interaction
+            audio.play();
+            
             dom.logoContainer.classList.add('animate');
-            // After animation, hide splash and show matches
             setTimeout(() => {
-                dom.pages.splash.style.display = 'none'; // Hard hide after transition
                 showPage('page-matches');
-            }, 2000); 
-        });
+            }, 2000);
+        }, { once: true }); // Ensure this only runs once
 
-        // View Roster Button
-        dom.viewRosterBtn.addEventListener('click', renderRoster);
-        console.log('Core event listeners initialized.');
+        // 3. Static Navigation Buttons
+        dom.backToDetailsBtn.onclick = () => showPage('page-details', state.currentMatchId);
+
+        console.log('[INIT_SUCCESS] Application initialized. Waiting for user interaction.');
     }
 
-    // --- App Initialization ---
-    console.log('Initializing application logic.');
-    initEventListeners();
-    // Start on the splash page by default
-    showPage('page-splash');
+    // Start the main application logic
+    init();
 }
