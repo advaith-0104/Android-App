@@ -1,317 +1,280 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
-<title>WORLD CUP 2026 - Match Explorer</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary": "#ffffff",
-                    "primary-fixed-dim": "#b1c5ff",
-                    "on-primary-fixed": "#001946",
-                    "error-container": "#ffdad6",
-                    "tertiary-container": "#3578b5",
-                    "on-primary-container": "#ffffff",
-                    "warning-bg": "#fff3cd",
-                    "outline": "#727787",
-                    "text-primary": "#222222",
-                    "on-secondary-fixed": "#410002",
-                    "primary-container": "#0d6efd",
-                    "inverse-surface": "#2f3131",
-                    "surface-container": "#eeeeee",
-                    "error-bg": "#f8d7da",
-                    "surface-translucent": "rgba(255, 255, 255, 0.88)",
-                    "on-secondary": "#ffffff",
-                    "on-tertiary-container": "#fdfcff",
-                    "on-tertiary-fixed-variant": "#00497a",
-                    "text-secondary": "#444444",
-                    "secondary-fixed-dim": "#ffb4ab",
-                    "error": "#ba1a1a",
-                    "on-background": "#1a1c1c",
-                    "secondary": "#b90c17",
-                    "on-secondary-container": "#fffbff",
-                    "primary": "#0057cd",
-                    "outline-variant": "#c2c6d8",
-                    "surface-dim": "#dadada",
-                    "on-primary": "#ffffff",
-                    "surface": "#f9f9f9",
-                    "secondary-container": "#de2e2c",
-                    "surface-container-low": "#f3f3f3",
-                    "surface-container-highest": "#e2e2e2",
-                    "surface-bright": "#f9f9f9",
-                    "tertiary": "#0c5f9a",
-                    "surface-variant": "#e2e2e2",
-                    "background": "#f9f9f9",
-                    "tertiary-fixed": "#d0e4ff",
-                    "surface-container-lowest": "#ffffff",
-                    "secondary-fixed": "#ffdad6",
-                    "on-surface": "#1a1c1c",
-                    "on-tertiary-fixed": "#001d35",
-                    "primary-fixed": "#dae2ff",
-                    "inverse-on-surface": "#f1f1f1",
-                    "on-error": "#ffffff",
-                    "on-secondary-fixed-variant": "#93000d",
-                    "on-surface-variant": "#424655",
-                    "border-subtle": "rgba(36, 41, 46, 0.08)",
-                    "on-primary-fixed-variant": "#00419e",
-                    "on-error-container": "#93000a",
-                    "surface-tint": "#0057ce",
-                    "inverse-primary": "#b1c5ff",
-                    "surface-container-high": "#e8e8e8",
-                    "tertiary-fixed-dim": "#9ccaff"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "gutter": "1rem",
-                    "container-margin": "2rem",
-                    "touch-target": "3rem",
-                    "stack-lg": "1.5rem",
-                    "container-margin-mobile": "1rem",
-                    "stack-md": "1.25rem",
-                    "stack-sm": "0.75rem"
-            },
-            "fontFamily": {
-                    "label-sm": ["Hanken Grotesk"],
-                    "title-md": ["Hanken Grotesk"],
-                    "label-lg": ["Hanken Grotesk"],
-                    "body-md": ["Hanken Grotesk"],
-                    "display-xl": ["Hanken Grotesk"],
-                    "headline-lg-mobile": ["Hanken Grotesk"],
-                    "headline-lg": ["Hanken Grotesk"],
-                    "body-lg": ["Hanken Grotesk"]
-            },
-            "fontSize": {
-                    "label-sm": ["0.85rem", {"lineHeight": "1", "fontWeight": "600"}],
-                    "title-md": ["1.25rem", {"lineHeight": "1.4", "fontWeight": "700"}],
-                    "label-lg": ["0.95rem", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "700"}],
-                    "body-md": ["1rem", {"lineHeight": "1.55", "fontWeight": "400"}],
-                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}]
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>WORLD CUP 2026 - Match Explorer</title>
+    <style>
+        :root {
+            --safe-area-inset-bottom: env(safe-area-inset-bottom);
+        }
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            height: 100vh;
+            overflow: hidden;
+            touch-action: manipulation;
+            padding-bottom: var(--safe-area-inset-bottom);
+        }
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .match-grid::-webkit-scrollbar {
+            display: none;
+        }
+        .active-tab {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .page-transition {
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
             }
-          },
-        },
-      }
-    </script>
-<style>
-        body { font-family: 'Hanken Grotesk', sans-serif; -webkit-tap-highlight-color: transparent; }
-        .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-        .match-grid::-webkit-scrollbar { display: none; }
-        .active-tab { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .page-transition { transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
-        .fade-in { animation: fadeIn 0.5s ease-out forwards; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
 </head>
 <body class="bg-surface text-on-surface select-none overflow-hidden">
-<!-- SPLASH SCREEN / INTRO -->
-<div class="fixed inset-0 z-[100] bg-primary flex flex-col items-center justify-center text-center p-8 page-transition" id="intro-page">
-<div class="relative group cursor-pointer touch-action-manipulation active:scale-95 transition-transform duration-150" onclick="navigateTo('match-list')">
-<div class="absolute inset-0 bg-white/20 rounded-full blur-2xl group-hover:blur-3xl transition-all"></div>
-<img alt="FIFA World Cup 2026 Official Logo" class="w-64 h-auto relative z-10 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4OL-GQOiqsiYcM3GPctbt4rgN4sAf9MHG99N8r_mUTB7lJXbS7WSefIvuGM-umm4l9tVTAkUOASGvy_Sg-EZNOa4b4OFBhuSP4Yk1MiZX6pIQTNUXCJraSAmigu5Ubw4MzNLQRAqvogYAe86A20WUeCHFxCVRz8nhpuvcB2z83mrFXxrE7QFDndl6lhaRpjZ-8kn1r2jjq2904b3kgzd8RLzfD-QUhKNBR5VVkdhYeb0Hxj82w6Salyi_N3YIrM2pBQ4tFP1WmsTU"/>
-</div>
-<div class="mt-12 text-white">
-<h1 class="font-display-xl text-white tracking-tighter italic text-[48px] uppercase">World Cup 2026</h1>
-<p class="font-body-lg text-white/80 mt-4 max-w-xs mx-auto">Experience the pulse of football through the ultimate match explorer.</p>
-</div>
-<button class="mt-12 bg-white text-primary font-label-lg px-12 py-4 rounded-full shadow-lg active:scale-95 transition-all" onclick="navigateTo('match-list')">
+    <!-- SPLASH SCREEN / INTRO -->
+    <div class="fixed inset-0 z-[100] bg-primary flex flex-col items-center justify-center text-center p-8 page-transition" id="intro-page">
+        <div class="relative group cursor-pointer touch-action-manipulation active:scale-95 transition-transform duration-150" onclick="navigateTo('match-list')">
+            <div class="absolute inset-0 bg-white/20 rounded-full blur-2xl group-hover:blur-3xl transition-all"></div>
+            <img alt="FIFA World Cup 2026 Official Logo" class="w-64 h-auto relative z-10 drop-shadow-2xl" src="../world_cup_logo.png" />
+        </div>
+        <div class="mt-12 text-white">
+            <h1 class="font-display-xl text-white tracking-tighter italic text-[48px] uppercase">World Cup 2026</h1>
+            <p class="font-body-lg text-white/80 mt-4 max-w-xs mx-auto">Experience the pulse of football through the ultimate match explorer.</p>
+        </div>
+        <button class="mt-12 bg-white text-primary font-label-lg px-12 py-4 rounded-full shadow-lg active:scale-95 transition-all" onclick="navigateTo('match-list')">
             ENTER ARENA
         </button>
-</div>
-<!-- MAIN APP SHELL -->
-<main class="hidden h-screen flex flex-col relative overflow-hidden" id="app-shell">
-<!-- TOP APP BAR -->
-<header class="fixed top-0 w-full z-50 bg-surface-translucent dark:bg-inverse-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm flex items-center justify-between px-container-margin-mobile h-16">
-<button class="text-primary touch-action-manipulation active:scale-95 transition-transform duration-150 p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<div class="font-display-xl text-primary tracking-tighter italic dark:text-primary-fixed-dim text-[24px] uppercase" id="page-title">WORLD CUP 2026</div>
-<button class="text-primary touch-action-manipulation active:scale-95 transition-transform duration-150 p-2">
-<span class="material-symbols-outlined">account_circle</span>
-</button>
-</header>
-<!-- CONTENT AREA -->
-<section class="flex-1 overflow-y-auto pt-16 pb-40 px-4" id="content-canvas">
-<!-- PAGE: MATCH LIST -->
-<div class="hidden space-y-6 fade-in" id="match-list-page">
-<div class="flex items-center justify-between mt-4">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-text-primary">Featured Matches</h2>
-<span class="text-primary font-label-sm">View All</span>
-</div>
-<!-- BENTO GRID CARDS -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<!-- Match Card 1 -->
-<div class="bg-surface-container-lowest border border-border-subtle rounded-[18px] p-stack-md shadow-sm active:scale-[0.98] transition-all cursor-pointer" onclick="navigateTo('roster-detail')">
-<div class="flex justify-between items-center mb-4">
-<span class="bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Live - 64'</span>
-<span class="material-symbols-outlined text-outline-variant">star</span>
-</div>
-<div class="flex items-center justify-between gap-4">
-<div class="flex flex-col items-center gap-2 flex-1">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
-<img class="w-full h-full object-cover" data-alt="Official Argentina national football team flag in a sleek high-gloss digital finish with vibrant sky blue and white stripes and a golden sun in the center, set against a modern studio background with soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTwR7C97fjElnx981Rti0_MjV_tFaTkGWtwbyXS5TFxmbwXteSirQZI0EK7uh8LxHfuEkT3c75-9GlQD7abWRLhr9GgqJIm_-0iyQL2okqjJU_YNSzk7ZYQI3a_sK7igusy5tJMs8ZODMGUea_7K2TpkucGAY4_E-esCWn3UHhxy7mVhtVSY7jQHtfxFTtUaVmWGyTRm2xzyV6Y5TqlJ6qZUX0s5Mj4nmPpZJK8EJ8uJUsrWEEO1aze1e5in8s-yuwFvhHCin2jYe8"/>
-</div>
-<span class="font-label-lg text-text-primary uppercase">ARG</span>
-</div>
-<div class="flex flex-col items-center">
-<span class="font-headline-lg-mobile text-[32px] text-primary">2 - 1</span>
-<span class="text-outline text-[12px] font-medium">Group Stage</span>
-</div>
-<div class="flex flex-col items-center gap-2 flex-1">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
-<img class="w-full h-full object-cover" data-alt="Official Brazil national football team flag featuring the iconic green background and yellow diamond with a blue globe, rendered in a high-fidelity cinematic sports broadcast style with elegant lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOOf1jcSZ8FVcfCNv25kahjFjyQHt-WGErrxoljrbdn0Ut0F82Ay7Es7LK_FHdH_sUwfOBx1kJdpzSMArCeZ8T2s1Rv0mKYlJgo4pxYr_0hmtiigMHViz4B_LGaR1P-3Hx79kbtAkjTd0so1qixQaVcHPZZNoBAyKPZZ2duXx0S15ztsYAjlVbJYeb5qWF7DoOs7QOAIG5fL5U8ls1mC2l6diCxcXrCMKDNf1GDIHmXufY505NSbJVhNcGqEaEDhh2uqN3ZYSw3sDq"/>
-</div>
-<span class="font-label-lg text-text-primary uppercase">BRA</span>
-</div>
-</div>
-</div>
-<!-- Match Card 2 -->
-<div class="bg-surface-container-lowest border border-border-subtle rounded-[18px] p-stack-md shadow-sm active:scale-[0.98] transition-all cursor-pointer">
-<div class="flex justify-between items-center mb-4">
-<span class="bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Today 21:00</span>
-<span class="material-symbols-outlined text-outline-variant">star</span>
-</div>
-<div class="flex items-center justify-between gap-4">
-<div class="flex flex-col items-center gap-2 flex-1">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
-<img class="w-full h-full object-cover" data-alt="French national flag with deep blue, white, and red vertical stripes, presented as a high-quality athletic emblem with soft ambient occlusion and professional sports graphic styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJuyJuKdWaeVZ9oIt3_-xI_L2ZmiocNAUSVCVubAE4zhUcDeTMyTn5NXNX1QOJYF4ECEXdjnEEegw4MOo-WL7aBdSREQgCYekeE9beBo2qxM5eyK7RHKRiIgaATlMhY2hJVoKwfjyyl_9_eGn5mualzQRi370gZFt50h94Ac3Mc3Q_f5onbTu8SwyMAwzVOzSqGV8SWaQ3XJ87LUaZwHqVn3JnxkJ6PGeSRKwF2QRKB8h1RRZdaSepROjzBVMapQKp1IYICG4W7WGd"/>
-</div>
-<span class="font-label-lg text-text-primary uppercase">FRA</span>
-</div>
-<div class="flex flex-col items-center">
-<span class="font-headline-lg-mobile text-[32px] text-outline-variant">VS</span>
-<span class="text-outline text-[12px] font-medium">Group D</span>
-</div>
-<div class="flex flex-col items-center gap-2 flex-1">
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
-<img class="w-full h-full object-cover" data-alt="German national flag with bold black, red, and gold horizontal stripes, showcased as a premium sports icon with subtle leather-like texture and dramatic cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi2KhJ_MxVbHKjDR_XVr9jhJ1zw95O89pTN0IpDeMkuT45Ce6uarf1o63Z75D9F35p6NttkoyMaFhgSdnSG5lbDO4qTSEmn0cYjfF8oJJQh0msbT_SE9FAYJTadARhqcVGr7iWXxsPlHPKZkkore4sR3Os50rBn7Blcvhn2kkmPwDo8P7VYT6J57sHI8HdVL1fxHum-YC19ZlzlYhex7M6UtyvcvsUy-qF5yixXLzBQgXywT65lsEIoOkXjVeTQY5f-9OC1fdJhTG1"/>
-</div>
-<span class="font-label-lg text-text-primary uppercase">GER</span>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-8">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-4">World Cup Audio Feed</h2>
-<div class="bg-primary/5 rounded-2xl p-4 flex gap-4 items-center">
-<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
-<span class="material-symbols-outlined">podcasts</span>
-</div>
-<div class="flex-1">
-<p class="font-label-lg text-text-primary">Matchday Live Radio</p>
-<p class="text-label-sm text-on-surface-variant">Coverage of ARG vs BRA</p>
-</div>
-<button class="bg-primary text-white p-2 rounded-full active:scale-90 transition-transform">
-<span class="material-symbols-outlined">play_arrow</span>
-</button>
-</div>
-</div>
-</div>
-<!-- PAGE: ROSTER DETAIL -->
-<div class="hidden fade-in" id="roster-detail-page">
-<div class="flex items-center gap-4 mb-6">
-<button class="p-2 hover:bg-surface-variant rounded-full" onclick="navigateTo('match-list')">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile">Argentina Roster</h2>
-</div>
-<div class="space-y-4">
-<div class="bg-white border border-border-subtle rounded-xl p-4 flex items-center justify-between">
-<div class="flex items-center gap-4">
-<span class="font-display-xl text-[24px] text-primary/30 w-8">10</span>
-<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Highly detailed portrait of a world-class professional football player in a sleek team uniform, set against a vibrant stadium backdrop with high-end sports photography lighting and a cool color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAixEGHcYWusQVokGKdtYSkpLRyxDH9csGiFGjeFn4hauIH1XYOJyHdqf_u1K5Zl-swl6DU-2YnbNfiRmmQWlG37LCu2h4HQKM7hXTSyiy6rJ8nHmUq2WtC1aNeQVpiiRH2Uus65C9w-NSA-xgTD1DtYZ_2crRllXoyshd-V5HHjPNuAczJvPQngH38rhgt6h06LyMweEHm4DHB5uxdzaLD4CB-Fqpi4iH4y5qER9dUhV2sNet67rahjy1JF7KLsfH2XoW3Pd6gW2gw"/>
-</div>
-<div>
-<p class="font-label-lg text-text-primary">L. Messi</p>
-<p class="text-[12px] text-outline">Forward</p>
-</div>
-</div>
-<div class="text-right">
-<p class="font-label-lg text-primary">CAP</p>
-<p class="text-[12px] text-outline">Inter Miami</p>
-</div>
-</div>
-<div class="bg-white border border-border-subtle rounded-xl p-4 flex items-center justify-between">
-<div class="flex items-center gap-4">
-<span class="font-display-xl text-[24px] text-primary/30 w-8">22</span>
-<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Portrait of a young professional football striker with an intense expression, wearing a premium national team jersey under theatrical stadium floodlights with a dynamic cinematic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYjL0ujBtKk7CtudAgQrZA7-kmzVQkfg-tsHxTh077kqOT06-eXC0ohQ3_DThQ6kPwamDUtTiht5HGYsrXvR9tkHZedq73MYfnAwwYobXnrLxbDNj_IEqZlMDTU3ZS3sV9H4a1A43Db8cxgCt0aLEqkPt-TvvCfNmOsvIQiwCUkZRna1hTorqWhrrAnf2WXAPq9RR2Mk1OLy58cjdKmz8lUpDX0Nw3KMuh1UEhw0zOkRvC-5lhzl4y3i-jtCNTbt6TijH1eu1VieVa"/>
-</div>
-<div>
-<p class="font-label-lg text-text-primary">L. Martinez</p>
-<p class="text-[12px] text-outline">Forward</p>
-</div>
-</div>
-<div class="text-right">
-<p class="font-label-lg text-secondary">LIVE</p>
-<p class="text-[12px] text-outline">Inter Milan</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PERSISTENT AUDIO BAR -->
-<div class="fixed bottom-20 left-4 right-4 z-40 glass bg-white/90 border border-white/20 shadow-lg rounded-2xl h-16 px-4 flex items-center gap-4 touch-action-manipulation" id="audio-bar">
-<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center text-white animate-pulse">
-<span class="material-symbols-outlined">radio</span>
-</div>
-<div class="flex-1 min-w-0">
-<p class="font-label-sm text-text-primary truncate">Live Broadcast: Argentina vs Brazil</p>
-<div class="w-full bg-surface-container-highest h-1 rounded-full mt-1 overflow-hidden">
-<div class="h-full bg-primary" style="width: 65%;"></div>
-</div>
-</div>
-<div class="flex items-center gap-2">
-<button class="p-2 text-primary active:scale-90 transition-transform">
-<span class="material-symbols-outlined">fast_rewind</span>
-</button>
-<button class="p-2 text-primary active:scale-90 transition-transform" id="play-pause-btn">
-<span class="material-symbols-outlined">pause</span>
-</button>
-<button class="p-2 text-primary active:scale-90 transition-transform">
-<span class="material-symbols-outlined">fast_forward</span>
-</button>
-</div>
-</div>
-<!-- BOTTOM NAV BAR -->
-<nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-translucent backdrop-blur-xl border-t border-outline-variant/20 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] flex justify-around items-center h-20 px-2">
-<button class="flex flex-col items-center gap-1 text-primary bg-primary-container/20 rounded-xl px-3 py-1 nav-item" id="nav-matches" onclick="navigateTo('match-list')">
-<span class="material-symbols-outlined">sports_soccer</span>
-<span class="font-label-sm text-label-sm">Matches</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-explore">
-<span class="material-symbols-outlined">explore</span>
-<span class="font-label-sm text-label-sm">Explore</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-audio">
-<span class="material-symbols-outlined">podcasts</span>
-<span class="font-label-sm text-label-sm">Audio</span>
-</button>
-<button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-profile">
-<span class="material-symbols-outlined">person</span>
-<span class="font-label-sm text-label-sm">Profile</span>
-</button>
-</nav>
-</main>
-<script>
+    </div>
+
+    <!-- MAIN APP SHELL -->
+    <main class="hidden h-screen flex flex-col relative overflow-hidden" id="app-shell">
+        <!-- TOP APP BAR -->
+        <header class="fixed top-0 w-full z-50 bg-surface-translucent dark:bg-inverse-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm flex items-center justify-between px-container-margin-mobile h-16">
+            <button class="text-primary touch-action-manipulation active:scale-95 transition-transform duration-150 p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="font-display-xl text-primary tracking-tighter italic dark:text-primary-fixed-dim text-[24px] uppercase" id="page-title">WORLD CUP 2026</div>
+            <button class="text-primary touch-action-manipulation active:scale-95 transition-transform duration-150 p-2">
+                <span class="material-symbols-outlined">account_circle</span>
+            </button>
+        </header>
+
+        <!-- CONTENT AREA -->
+        <section class="flex-1 overflow-y-auto pt-16 pb-40 px-4" id="content-canvas">
+            <!-- PAGE: MATCH LIST -->
+            <div class="hidden space-y-6 fade-in" id="match-list-page">
+                <div class="flex items-center justify-between mt-4">
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-text-primary">Featured Matches</h2>
+                    <span class="text-primary font-label-sm">View All</span>
+                </div>
+                <!-- BENTO GRID CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Match Card 1 -->
+                    <div class="bg-surface-container-lowest border border-border-subtle rounded-[18px] p-stack-md shadow-sm active:scale-[0.98] transition-all cursor-pointer" onclick="navigateTo('roster-detail')">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Live - 64'</span>
+                            <span class="material-symbols-outlined text-outline-variant">star</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                            <div class="flex flex-col items-center gap-2 flex-1">
+                                <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
+                                    <img class="w-full h-full object-cover" src="img/arg.png" />
+                                </div>
+                                <span class="font-label-lg text-text-primary uppercase">ARG</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="font-headline-lg-mobile text-[32px] text-primary">2 - 1</span>
+                                <span class="text-outline text-[12px] font-medium">Group Stage</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 flex-1">
+                                <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
+                                    <img class="w-full h-full object-cover" src="img/bra.png" />
+                                </div>
+                                <span class="font-label-lg text-text-primary uppercase">BRA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Match Card 2 -->
+                    <div class="bg-surface-container-lowest border border-border-subtle rounded-[18px] p-stack-md shadow-sm active:scale-[0.98] transition-all cursor-pointer">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Today 21:00</span>
+                            <span class="material-symbols-outlined text-outline-variant">star</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-4">
+                            <div class="flex flex-col items-center gap-2 flex-1">
+                                <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
+                                    <img class="w-full h-full object-cover" src="img/fra.png" />
+                                </div>
+                                <span class="font-label-lg text-text-primary uppercase">FRA</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="font-headline-lg-mobile text-[32px] text-outline-variant">VS</span>
+                                <span class="text-outline text-[12px] font-medium">Group D</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-2 flex-1">
+                                <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center overflow-hidden border border-outline-variant/20 shadow-inner">
+                                    <img class="w-full h-full object-cover" src="img/ger.png" />
+                                </div>
+                                <span class="font-label-lg text-text-primary uppercase">GER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-4">World Cup Audio Feed</h2>
+                    <div id="audio-player-button" class="bg-primary/5 rounded-2xl p-4 flex gap-4 items-center">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined">podcasts</span>
+                        </div>
+                        <div class="flex-1">
+                            <p class="font-label-lg text-text-primary">Matchday Live Radio</p>
+                            <p class="text-label-sm text-on-surface-variant">Coverage of ARG vs BRA</p>
+                        </div>
+                        <button class="bg-primary text-white p-2 rounded-full active:scale-90 transition-transform">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE: ROSTER DETAIL -->
+            <div class="hidden fade-in" id="roster-detail-page">
+                <div class="flex items-center gap-4 mb-6">
+                    <button class="p-2 hover:bg-surface-variant rounded-full" onclick="navigateTo('match-list')">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </button>
+                    <h2 class="font-headline-lg-mobile text-headline-lg-mobile">Argentina Roster</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white border border-border-subtle rounded-xl p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="font-display-xl text-[24px] text-primary/30 w-8">10</span>
+                            <div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+                                <img class="w-full h-full object-cover" src="img/messi.png" />
+                            </div>
+                            <div>
+                                <p class="font-label-lg text-text-primary">L. Messi</p>
+                                <p class="text-[12px] text-outline">Forward</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-label-lg text-primary">CAP</p>
+                            <p class="text-[12px] text-outline">Inter Miami</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-border-subtle rounded-xl p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <span class="font-display-xl text-[24px] text-primary/30 w-8">22</span>
+                            <div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+                                <img class="w-full h-full object-cover" src="img/martinez.png" />
+                            </div>
+                            <div>
+                                <p class="font-label-lg text-text-primary">L. Martinez</p>
+                                <p class="text-[12px] text-outline">Forward</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-label-lg text-secondary">LIVE</p>
+                            <p class="text-[12px] text-outline">Inter Milan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSISTENT AUDIO BAR -->
+        <div class="fixed bottom-20 left-4 right-4 z-40 glass bg-white/90 border border-white/20 shadow-lg rounded-2xl h-16 px-4 flex items-center gap-4 touch-action-manipulation hidden" id="audio-bar">
+            <div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center text-white animate-pulse">
+                <span class="material-symbols-outlined">radio</span>
+            </div>
+            <div class="flex-1 min-w-0">
+                <p class="font-label-sm text-text-primary truncate">Live Broadcast: Argentina vs Brazil</p>
+                <div class="w-full bg-surface-container-highest h-1 rounded-full mt-1 overflow-hidden">
+                    <div class="h-full bg-primary" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button class="p-2 text-primary active:scale-90 transition-transform">
+                    <span class="material-symbols-outlined">fast_rewind</span>
+                </button>
+                <button class="p-2 text-primary active:scale-90 transition-transform" id="play-pause-btn">
+                    <span class="material-symbols-outlined">pause</span>
+                </button>
+                <button class="p-2 text-primary active:scale-90 transition-transform">
+                    <span class="material-symbols-outlined">fast_forward</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAV BAR -->
+        <nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-translucent backdrop-blur-xl border-t border-outline-variant/20 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] flex justify-around items-center h-20 px-2">
+            <button class="flex flex-col items-center gap-1 text-primary bg-primary-container/20 rounded-xl px-3 py-1 nav-item" id="nav-matches" onclick="navigateTo('match-list')">
+                <span class="material-symbols-outlined">sports_soccer</span>
+                <span class="font-label-sm text-label-sm">Matches</span>
+            </button>
+            <button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-explore">
+                <span class="material-symbols-outlined">explore</span>
+                <span class="font-label-sm text-label-sm">Explore</span>
+            </button>
+            <button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-audio" onclick="toggleAudio()">
+                <span class="material-symbols-outlined">podcasts</span>
+                <span class="font-label-sm text-label-sm">Audio</span>
+            </button>
+            <button class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary transition-all nav-item" id="nav-profile">
+                <span class="material-symbols-outlined">person</span>
+                <span class="font-label-sm text-label-sm">Profile</span>
+            </button>
+        </nav>
+    </main>
+
+    <script>
+        // Diagnostic Debugging
+        window.onerror = function(message, source, lineno, colno, error) {
+            console.log(`[ERROR] ${message} at ${source}:${lineno}:${colno}`);
+            return true;
+        };
+        console.log("DOM loading...");
+
+        // Emulator Lifecycle
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("DOM fully loaded and parsed");
+            // If running in an emulator without cordova, initialize immediately
+            if (typeof window.cordova === 'undefined') {
+                console.log("Cordova not found, assuming emulator environment. Initializing app...");
+                initializeApp();
+            } else {
+                // Otherwise, wait for the 'deviceready' event
+                document.addEventListener('deviceready', initializeApp, false);
+            }
+        });
+
         const pages = ['intro-page', 'match-list-page', 'roster-detail-page'];
         const appShell = document.getElementById('app-shell');
         const introPage = document.getElementById('intro-page');
+        const audioBar = document.getElementById('audio-bar');
+        const audioPlayerButton = document.getElementById('audio-player-button');
+        let audio;
+
+        function initializeApp() {
+            console.log("Assets checked, rendering UI...");
+            introPage.style.transform = 'translateY(0)';
+            introPage.style.opacity = '1';
+            appShell.classList.add('hidden');
+        }
 
         function navigateTo(targetId) {
             // Layout Logic
@@ -354,6 +317,23 @@
                 document.getElementById('page-title').innerText = 'ROSTER';
             }
         }
+        
+        function toggleAudio() {
+            if (!audio) {
+                console.log("Loading audio...");
+                audio = new Audio('../audio/K_naan_-_Wavin_Flag_original_(mp3.pm).mp3');
+                audio.loop = true;
+            }
+            if (audio.paused) {
+                audio.play();
+                audioBar.classList.remove('hidden');
+            } else {
+                audio.pause();
+                audioBar.classList.add('hidden');
+            }
+        }
+        audioPlayerButton.addEventListener('click', toggleAudio);
+
 
         // Play/Pause Microinteraction
         const playBtn = document.getElementById('play-pause-btn');
@@ -362,6 +342,11 @@
             isPlaying = !isPlaying;
             playBtn.querySelector('span').innerText = isPlaying ? 'pause' : 'play_arrow';
             document.querySelector('.animate-pulse').style.animationPlayState = isPlaying ? 'running' : 'paused';
+             if (isPlaying) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
         });
 
         // Initialize Native Feel (Prevent double tap zoom)
@@ -369,7 +354,9 @@
             if (event.touches.length > 1) {
                 event.preventDefault();
             }
-        }, { passive: false });
+        }, {
+            passive: false
+        });
 
         let lastTouchEnd = 0;
         document.addEventListener('touchend', function(event) {
@@ -380,4 +367,5 @@
             lastTouchEnd = now;
         }, false);
     </script>
-</body></html>
+</body>
+</html>
