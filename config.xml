@@ -1,21 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.fifa.matchexplorer" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Match Explorer</name>
-    <description>FIFA World Cup 2026 Match & Roster Explorer</description>
-    <author email="dev@fifa.com" href="https://fifa.com">Stitch AI</author>
+<widget id="com.example.fifa" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FIFA Match Explorer</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
     <content src="index.html" />
-    <access origin="file://*/*" />
-    <allow-navigation href="file://*/*" />
-    <preference name="Orientation" value="portrait" />
-    <preference name="Fullscreen" value="false" />
-    <preference name="BackgroundColor" value="#fff4f6f8" />
-    <preference name="DisallowOverscroll" value="true" />
-    <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="AllowInlineMediaPlayback" value="true" />
-    <preference name="AllowFileAccessFromFileURLs" value="true" />
-    <preference name="AllowUniversalAccessFromFileURLs" value="true" />
-    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
     <platform name="android">
-        <preference name="KeepRunning" value="true" />
+        <allow-intent href="market:*" />
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
     </platform>
 </widget>
