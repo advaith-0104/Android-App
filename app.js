@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------
  * FIFA Match Explorer - Core Logic for 4-Page Single-HTML-File App
  * ------------------------------------------------------------------------
- * CRITICAL REFACTOR: This script manages a 4-page structure within a
+ * CRITICAL REFACTOR (FIXED): This script manages a 4-page structure within a
  * single HTML file for a Cordova environment on Android 15. It ensures
  * continuous background audio playback and adheres to the specified SPA-like
  * navigation model.
@@ -28,15 +28,17 @@ function onDeviceReady() {
                 }).catch(error => {
                     console.error('[ERROR] Audio playback failed:', error);
                 });
-            } else {
+            } else if (this.player) {
                  console.log('[INFO] Audio is already playing.');
             }
         },
         init: function() {
             console.log('[INFO] Initializing audio...');
-            // Play is initiated by the first user interaction (splash screen click)
-            // This complies with modern browser autoplay policies.
-            this.player.load();
+            if (this.player) {
+                this.player.load();
+            } else {
+                console.error('[ERROR] Audio player element not found!');
+            }
         }
     };
 
@@ -83,7 +85,9 @@ function onDeviceReady() {
     window.showPage = async function(pageId, dataId = null) {
         console.log(`[NAV] Attempting to navigate to: ${pageId} with dataID: ${dataId}`);
         
-        state.currentMatchId = dataId || state.currentMatchId;
+        if (dataId) {
+            state.currentMatchId = dataId;
+        }
 
         Object.values(dom.pages).forEach(page => page.classList.remove('active'));
 
@@ -106,7 +110,7 @@ function onDeviceReady() {
                 break;
             case 'page-details':
                 if (!state.currentMatchId) {
-                    console.error('[ERROR] showPage('page-details') called without a matchID.');
+                    console.error("[ERROR] showPage('page-details') called without a matchID.");
                     showPage('page-matches'); // Fallback
                     return;
                 }
@@ -115,13 +119,15 @@ function onDeviceReady() {
                 break;
             case 'page-roster':
                 if (!state.currentMatchId) {
-                    console.error('[ERROR] showPage('page-roster') called without a matchID.');
+                    console.error("[ERROR] showPage('page-roster') called without a matchID.");
                     showPage('page-matches'); // Fallback
                     return;
                 }
                 if (!state.isDataFetched.rosters) await fetchData('rosters');
                 renderRosterPage();
                 break;
+            default:
+                console.log(`[NAV_INFO] No specific action for page: ${pageId}`);
         }
     };
 
@@ -169,9 +175,9 @@ function onDeviceReady() {
              const time = new Date(`${match.date} ${match.time || '00:00'} UTC`).toLocaleTimeString('en-US', { timeZone: zone, hour: '2-digit', minute: '2-digit' });
              return `<li><strong>${label}:</strong> ${time}</li>`;
         }).join('');
-        dom.detailsContent.innerHTML = `<p><strong>Stadium:</strong> ${match.stadium} (${match.stadiumCountry})</p><ul>${timeList}</ul>`;
+        dom.detailsContent.innerHTML = `<p><strong>Stadium:</strong> ${match.stadium} (${match.stadiumCountry || ''})</p><ul>${timeList}</ul>`;
         dom.viewRosterBtn.onclick = () => showPage('page-roster', state.currentMatchId);
-        console.log(`[RENDER] Match details rendered for match ID: ${state.currentMatchI THINK this is a bugfixd}.`);
+        console.log(`[RENDER] Match details rendered for match ID: ${state.currentMatchId}.`);
     }
 
     function renderRosterPage() {
@@ -181,7 +187,7 @@ function onDeviceReady() {
             return;
         }
         const getTeamRosterHTML = (teamName) => {
-            const teamKey = teamName.toUpperCase().replace(' ','');
+            const teamKey = teamName.toUpperCase().replace(/\s/g, ''); // Fix: Handle multiple spaces
             const roster = state.rosters[teamKey];
             if (!roster) return `<p>Roster for ${teamName} not available.</p>`;
             const playing11 = (roster.playing11 || []).map(p => `<li>${p}</li>`).join('');
