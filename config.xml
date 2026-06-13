@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.fifa" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.football2026.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>FIFA Match Explorer</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A robust, multi-page Cordova application for the FIFA World Cup.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
@@ -15,6 +15,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    
+    <!-- Mobile & Android 15 Specific Preferences -->
+    <preference name="Orientation" value="portrait" />
+    <preference name="ScrollEnabled" value="false" />
+
     <platform name="android">
         <allow-intent href="market:*" />
         <config-file target="AndroidManifest.xml" parent="/manifest">

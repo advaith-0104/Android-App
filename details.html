@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Match Details - FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 
+        PAGE 3: MATCH DETAILS
+        This page shows the details for a specific match.
+    -->
+    <div id="page-details" class="page active">
+        <div class="header">
+            <button class="back-btn" onclick="window.location.href='matches.html'">&larr; Back to Matches</button>
+            <h2 id="details-title">Match Details</h2>
+        </div>
+        <div id="details-content" class="content-card">
+            <!-- Details will be injected here by app.js -->
+        </div>
+        <button id="view-roster-btn">View Rosters</button>
+    </div>
+
+    <!-- 
+        The script for this page is also app.js, which now handles routing
+        and data display for multiple HTML files.
+    -->
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

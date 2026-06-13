@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>All Matches - FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 
+        PAGE 2: MATCH LIST 
+        This page is responsible for displaying all 104 matches.
+        The data is fetched and rendered by app.js.
+    -->
+    <div id="page-matches" class="page active">
+        <div class="header">
+            <h2>All Matches</h2>
+        </div>
+        <div id="match-list" class="match-list">
+            <!-- Match cards will be dynamically inserted here by app.js -->
+            <!-- Example of what will be generated:
+            <div class="match-card" onclick="navigateToDetails(1)">
+                <h4>USA vs MEXICO</h4>
+                <p>June 12, 2026</p>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <!-- 
+        The main application logic is in app.js, which is now a dedicated,
+        massive file for handling data and page logic for this view.
+    -->
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
