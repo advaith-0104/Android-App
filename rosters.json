@@ -1,0 +1,1631 @@
+{
+  "MEXICO": {
+    "playing11": [
+      "Raul Rangel",
+      "Carlos Acevedo",
+      "Guillermo Ochoa",
+      "Israel Reyes",
+      "Jesús Gallardo",
+      "Jorge Sánchez",
+      "César Montes",
+      "Johan Vásquez",
+      "Mateo Chávez",
+      "Erik Lira",
+      "Luis Romo"
+    ],
+    "substitutes": [
+      "Obed Vargas",
+      "Brian Gutiérrez",
+      "Orbelín Pineda",
+      "Edson Álvarez",
+      "Gilberto Mora",
+      "César Huerta",
+      "Álvaro Fidalgo",
+      "Luis Chávez",
+      "Roberto Alvarado"
+    ],
+    "reserves": [
+      "Alexis Vega",
+      "Julián Quiñones",
+      "Santiago Gimenez",
+      "Guillermo Martínez",
+      "Armando González",
+      "Raúl Jiménez"
+    ]
+  },
+  "SOUTH AFRICA": {
+    "playing11": [
+      "Ronwen Williams",
+      "Ricardo Goss",
+      "Sipho Chaine",
+      "Khuliso Mudau",
+      "Olwethu Makhanya",
+      "Bradley Cross",
+      "Thabang Matuludi",
+      "Nkosinathi Sibisi",
+      "Aubrey Modiba",
+      "Khulumani Ndamane",
+      "Ime Okon"
+    ],
+    "substitutes": [
+      "Samukele Kabini",
+      "Mbekezeli Mbokazi",
+      "Teboho Mokoena",
+      "Jayden Adams",
+      "Thalente Mbatha",
+      "Kamogelo Sebelebele",
+      "Sphephelo Sithole",
+      "Oswin Appollis",
+      "Tshepang Moremi"
+    ],
+    "reserves": [
+      "Evidence Makgopa",
+      "Lyle Foster",
+      "Iqraam Rayners",
+      "Relebohile Mofokeng",
+      "Themba Zwane",
+      "Thapelo Maseko"
+    ]
+  },
+  "REPUBLIC OF KOREA": {
+    "playing11": [
+      "Song Bumkeun",
+      "Jo Hyeonwoo",
+      "Kim Seung-gyu",
+      "Jens Castrop",
+      "Lee Hanbeom",
+      "Park Jinseob",
+      "Lee Kihyuk",
+      "Kim Minjae",
+      "Kim Moonhwan",
+      "Kim Taehyeon",
+      "Lee Taeseok"
+    ],
+    "substitutes": [
+      "Seol Youngwoo",
+      "Cho Wije",
+      "Lee Donggyeong",
+      "Hwang Heechan",
+      "Yang Hyunjun",
+      "Hwang Inbeom",
+      "Lee Jaesung",
+      "Kim Jingyu",
+      "Eom Jisung"
+    ],
+    "reserves": [
+      "Bae Junho",
+      "Lee Kangin",
+      "Paik Seungho",
+      "Cho Guesung",
+      "Son Heungmin",
+      "Oh Hyeongyu"
+    ]
+  },
+  "CZECHIA": {
+    "playing11": [
+      "Lukáš Horníček",
+      "Matěj Kovář",
+      "Jindřich Staněk",
+      "Vladimír Coufal",
+      "David Douděra",
+      "Tomáš Holeš",
+      "Robin Hranáč",
+      "Štěpán Chaloupek",
+      "David Jurásek",
+      "Ladislav Krejčí",
+      "Jaroslav Zelený"
+    ],
+    "substitutes": [
+      "David Zima",
+      "Lukáš Červ",
+      "Vladimír Darida",
+      "Lukáš Provod",
+      "Michal Sadílek",
+      "Hugo Sochůrek",
+      "Alexandr Sojka",
+      "Tomáš Souček",
+      "Pavel Šulc"
+    ],
+    "reserves": [
+      "Denis Višinský",
+      "Adam Hložek",
+      "Tomáš Chorý",
+      "Mojmír Chytil",
+      "Jan Kuchta",
+      "Patrik Schick"
+    ]
+  },
+  "CANADA": {
+    "playing11": [
+      "Dayne St. Clair",
+      "Maxime Crépeau",
+      "Owen Goodman",
+      "Alistair Johnson",
+      "Derek Cornelius",
+      "Richie Laryea",
+      "Niko Sigur",
+      "Joel Waterman",
+      "Luc De Fougerolles",
+      "Moïse Bombito",
+      "Alphonso Davies"
+    ],
+    "substitutes": [
+      "Alfie Jones",
+      "Stephen Eustáquio",
+      "Ismaël Koné",
+      "Tajon Buchanan",
+      "Mathieu Choinière",
+      "Ali Ahmed",
+      "Nathan Saliba",
+      "Liam Miller",
+      "Marcelo Flores"
+    ],
+    "reserves": [
+      "Jacob Shaffelburg",
+      "Jonathan Osario",
+      "Jonathan David",
+      "Cyle Larin",
+      "Tani Oluwaseyi",
+      "Promise David"
+    ]
+  },
+  "BOSNIA AND HERZEGOVINA": {
+    "playing11": [
+      "Nikola Vasilj",
+      "Martin Zlomislić",
+      "Osman Hadžikić",
+      "Sead Kolašinac",
+      "Amar Dedić",
+      "Nihad Mujakić",
+      "Nikola Katić",
+      "Tarik Muharemović",
+      "Stjepan Radeljić",
+      "Dennis Hadžikadunić",
+      "Nidal Čelik"
+    ],
+    "substitutes": [
+      "Amir Hadžiahmetović",
+      "Ivan Šunjić",
+      "Ivan Bašić",
+      "Dženis Burnić",
+      "Ermin Mahmić",
+      "Benjamin Tahirović",
+      "Amar Memić",
+      "Armin Gigović",
+      "Kerim Alajbegović"
+    ],
+    "reserves": [
+      "Esmir Bajraktarević",
+      "Ermedin Demirović",
+      "Jovo Lukić",
+      "Samed Baždar",
+      "Haris Tabaković",
+      "Edin Džeko"
+    ]
+  },
+  "QATAR": {
+    "playing11": [
+      "Salah Zakaria",
+      "Mahmoud Abunada",
+      "Meshaal Barsham",
+      "Hashmi Hussein",
+      "Ayoub Alawi",
+      "Boualem Khoukhi",
+      "Pedro Miguel",
+      "Issa Laaye",
+      "Lucas Mendes",
+      "Sultan Al-Brake",
+      "Homam Al-Amin"
+    ],
+    "substitutes": [
+      "Mohammed Al-Manai",
+      "Jassem Jaber",
+      "Karim Boudiaf",
+      "Ahmed Fathi",
+      "Abdulaziz Hatem",
+      "Assim Madibo",
+      "Tahseen Mohammed",
+      "Edmilson Junior",
+      "Almoez Ali"
+    ],
+    "reserves": [
+      "Akram Afif",
+      "Mohammed Muntari",
+      "Youssef Abdulrazzaq",
+      "Ahmed Alaa",
+      "Hassan Al-Haydos",
+      "Ahmed Al-Janahi"
+    ]
+  },
+  "SWITZERLAND": {
+    "playing11": [
+      "Marvin Keller",
+      "Gregor Kobel",
+      "Yvon Mvogo",
+      "Manuel Akanji",
+      "Aurèle Amenda",
+      "Eray Cömert",
+      "Nico Elvedi",
+      "Luca Jaquez",
+      "Miro Muheim",
+      "Ricardo Rodríguez",
+      "Silvan Widmer"
+    ],
+    "substitutes": [
+      "Michel Aebischer",
+      "Remo Freuler",
+      "Ardon Jashari",
+      "Fabian Rieder",
+      "Djibril Sow",
+      "Granit Xhaka",
+      "Denis Zakaria",
+      "Zeki Amdouni",
+      "Breel Embolo"
+    ],
+    "reserves": [
+      "Dan Ndoye",
+      "Noah Okafor",
+      "Rubén Vargas",
+      "Christian Fassnacht",
+      "Cedric Itten",
+      "Johan Manzambi"
+    ]
+  },
+  "BRAZIL": {
+    "playing11": [
+      "Alisson",
+      "Ederson",
+      "Weverton",
+      "Éderson",
+      "Douglas Santos",
+      "Alex Sandro",
+      "Gabriel Magalhães",
+      "Marquinhos",
+      "Danilo",
+      "Bremer",
+      "Ibañez"
+    ],
+    "substitutes": [
+      "Léo Pereira",
+      "Bruno Guimarães",
+      "Casemiro",
+      "Danilo Santos",
+      "Fabinho",
+      "Lucas Paquetá",
+      "Raphinha",
+      "Neymar",
+      "Vinícius Júnior"
+    ],
+    "reserves": [
+      "Luiz Henrique",
+      "Matheus Cunha",
+      "Gabriel Martinelli",
+      "Igor Thiago",
+      "Endrick",
+      "Rayan"
+    ]
+  },
+  "MOROCCO": {
+    "playing11": [
+      "Yassine Bounou",
+      "Munir El Kajoui",
+      "Ahmed Reda Tagnaouti",
+      "Noussair Mazraoui",
+      "Anass Salah-Eddine",
+      "Youssef Belammari",
+      "Nayef Aguerd",
+      "Chadi Riad",
+      "Issa Diop",
+      "Redouane Halhal",
+      "Achraf Hakimi"
+    ],
+    "substitutes": [
+      "Zakaria El Ouahdi",
+      "Samir El Mourabet",
+      "Ayyoub Bouaddi",
+      "Neil El Aynaoui",
+      "Sofyan Amrabat",
+      "Azzedine Ounahi",
+      "Bilal El Khannouss",
+      "Ismael Saibari",
+      "Abdessamad Ezzalzouli"
+    ],
+    "reserves": [
+      "Chemsdine Talbi",
+      "Soufiane Rahimi",
+      "Ayoub El Kaabi",
+      "Brahim Díaz",
+      "Yassine Gessime",
+      "Ayoube Amaimouni"
+    ]
+  },
+  "HAITI": {
+    "playing11": [
+      "Johnny Placide",
+      "Alexandre Pierre",
+      "Josué Duverger",
+      "Carlens Arcus",
+      "Wilguens Paugain",
+      "Duke Lacroix",
+      "Martin Experience",
+      "Jean-Kevin Duverne",
+      "Ricardo Adé",
+      "Hannes Delcroix",
+      "Keeto Thermoncy"
+    ],
+    "substitutes": [
+      "Leverton Pierre",
+      "Carl-Fred Sainthe",
+      "Jean-Jacques Danley",
+      "Jeanricner Bellegarde",
+      "Pierre Woodenski",
+      "Dominique Simon",
+      "Louicius Deedson",
+      "Ruben Providence",
+      "Josué Casimir"
+    ],
+    "reserves": [
+      "Derrick Etienne",
+      "Wilson Isidor",
+      "Duckens Nazon",
+      "Frantzdy Pierrot",
+      "Yassin Fortune",
+      "Lenny Joseph"
+    ]
+  },
+  "SCOTLAND": {
+    "playing11": [
+      "Craig Gordon",
+      "Angus Gunn",
+      "Liam Kelly",
+      "Grant Hanley",
+      "Jack Hendry",
+      "Aaron Hickey",
+      "Dom Hyam",
+      "Scott McKenna",
+      "Nathan Patterson",
+      "Anthony Ralston",
+      "Andy Robertson"
+    ],
+    "substitutes": [
+      "John Souttar",
+      "Kieran Tierney",
+      "Ryan Christie",
+      "Findlay Curtis",
+      "Lewis Ferguson",
+      "Ben Gannon-Doak",
+      "Tyler Fletcher",
+      "John McGinn",
+      "Kenny McLean"
+    ],
+    "reserves": [
+      "Scott McTominay",
+      "Ché Adams",
+      "Lyndon Dykes",
+      "George Hirst",
+      "Lawrence Shankland",
+      "Ross Stewart"
+    ]
+  },
+  "UNITED STATES OF AMERICA": {
+    "playing11": [
+      "Chris Brady",
+      "Matt Freese",
+      "Matt Turner",
+      "Max Arfsten",
+      "Sergiño Dest",
+      "Alex Freeman",
+      "Mark McKenzie",
+      "Tim Ream",
+      "Chris Richards",
+      "Antonee Robinson",
+      "Miles Robinson"
+    ],
+    "substitutes": [
+      "Joe Scally",
+      "Auston Trusty",
+      "Tyler Adams",
+      "Sebastian Berhalter",
+      "Weston McKennie",
+      "Gio Reyna",
+      "Cristian Roldan",
+      "Malik Tillman",
+      "Brenden Aaronson"
+    ],
+    "reserves": [
+      "Folarin Balogun",
+      "Ricardo Pepi",
+      "Christian Pulisic",
+      "Tim Weah",
+      "Haji Wright",
+      "Alejandro Zendejas"
+    ]
+  },
+  "PARAGUAY": {
+    "playing11": [
+      "Gatito Fernández",
+      "Orlando Gill",
+      "Gastón Olveira",
+      "Gustavo Gómez",
+      "Júnior Alonso",
+      "Fabián Balbuena",
+      "Omar Alderete",
+      "Juan José Cáceres",
+      "Gustavo Velázquez",
+      "José Canale",
+      "Alexandro Maidana"
+    ],
+    "substitutes": [
+      "Miguel Almirón",
+      "Kaku",
+      "Andrés Cubas",
+      "Ramón Sosa",
+      "Diego Gómez",
+      "Damián Bobadilla",
+      "Braian Ojeda",
+      "Matías Galarza",
+      "Maurício"
+    ],
+    "reserves": [
+      "Antonio Sanabria",
+      "Julio Enciso",
+      "Gabriel Ávalos",
+      "Álex Arce",
+      "Isidro Pitta",
+      "Gustavo Caballero"
+    ]
+  },
+  "AUSTRALIA": {
+    "playing11": [
+      "Ryan",
+      "Izzo",
+      "Beach",
+      "Behich",
+      "Bos",
+      "Burgess",
+      "Circati",
+      "Degenek",
+      "Geria",
+      "Herrington",
+      "Italiano"
+    ],
+    "substitutes": [
+      "Souttar",
+      "Trewin",
+      "Devlin",
+      "Hrustic",
+      "Irvine",
+      "Metcalfe",
+      "Okon-Englster",
+      "O'Neill",
+      "Irankunda"
+    ],
+    "reserves": [
+      "Leckie",
+      "Mabil",
+      "Toure",
+      "Velupilly",
+      "Volpato",
+      "Yengi"
+    ]
+  },
+  "TURKEY": {
+    "playing11": [
+      "Altay Bayındır",
+      "Mert Günok",
+      "Uğurcan Çakır",
+      "Abdülkerim Bardakcı",
+      "Çağlar Söyüncü",
+      "Eren Elmalı",
+      "Ferdi Kadıoğlu",
+      "Merih Demiral",
+      "Mert Müldür",
+      "Ozan Kabak",
+      "Samet Akaydın"
+    ],
+    "substitutes": [
+      "Zeki Çelik",
+      "Hakan Çalhanoğlu",
+      "İsmail Yüksek",
+      "Kaan Ayhan",
+      "Orkun Kökçü",
+      "Salih Özcan",
+      "Arda Güler",
+      "Barış Alper Yılmaz",
+      "Can Uzun"
+    ],
+    "reserves": [
+      "Deniz Gül",
+      "İrfan Can Kahveci",
+      "Kenan Yıldız",
+      "Kerem Aktürkoğlu",
+      "Oğuz Aydın",
+      "Yunus Akgün"
+    ]
+  },
+  "GERMANY": {
+    "playing11": [
+      "Oliver Baumann",
+      "Manuel Neuer",
+      "Alexander Nübel",
+      "Waldemar Anton",
+      "Nathaniel Brown",
+      "Joshua Kimmich",
+      "David Raum",
+      "Antonio Rudiger",
+      "Nico Schlotterbeck",
+      "Jonathan Tah",
+      "Malick Thiaw"
+    ],
+    "substitutes": [
+      "Nadiem Amiri",
+      "Leon Goretzka",
+      "Pascal Gross",
+      "Jamie Leweling",
+      "Assan Ouédraogo",
+      "Jamal Musiala",
+      "Felix Nmecha",
+      "Alexander Pavlovic",
+      "Angelo Stiller"
+    ],
+    "reserves": [
+      "Florian Wirtz",
+      "Maximilian Beier",
+      "Kai Havertz",
+      "Leroy Sane",
+      "Denis Undav",
+      "Nick Woltemade"
+    ]
+  },
+  "CURACAO": {
+    "playing11": [
+      "Tyrick Bodak",
+      "Trevor Doornbusch",
+      "Eloy Room",
+      "Riechedly Bazoer",
+      "Joshua Brenet",
+      "Roshon Van Eijma",
+      "Sherel Floranus",
+      "Deveron Fonville",
+      "Juriën Gaari",
+      "Armando Obispo",
+      "Shurandy Sambo"
+    ],
+    "substitutes": [
+      "Juninho Bacuna",
+      "Leandro Bacuna",
+      "Livano Comenencia",
+      "Kevin Felida",
+      "Ar’Jany Martha",
+      "Tyrese Noslin",
+      "Godfried Roemeratoe",
+      "Jeremy Antonisse",
+      "Tahith Chong"
+    ],
+    "reserves": [
+      "Kenji Gorré",
+      "Sontje Hansen",
+      "Gervane Kastaneer",
+      "Brandley Kuwas",
+      "Jürgen Locadia",
+      "Jearl Margaritha"
+    ]
+  },
+  "COTE D'IVOIRE": {
+    "playing11": [
+      "Yahia Fofana",
+      "Mohomed Koné",
+      "Alban Lafont",
+      "Emmanuel Agbadou",
+      "Clément Akpa",
+      "Ousmane Diomandé",
+      "Guéla Doué",
+      "Ghislain Konan",
+      "Odilon Kossounou",
+      "Evan Ndicka",
+      "Wilfried Singo"
+    ],
+    "substitutes": [
+      "Seko Fofana",
+      "Parfait Guiagon",
+      "Christ Inao Oulaï",
+      "Franck Kessié",
+      "Ibrahim Sangaré",
+      "Jean-Mickaël Seri",
+      "Simon Adingra",
+      "Ange-Yoan Bonny",
+      "Amad Diallo"
+    ],
+    "reserves": [
+      "Oumar Diakité",
+      "Yan Diomandé",
+      "Evann Guessand",
+      "Nicolas Pépé",
+      "Bazoumana Touré",
+      "Elye Wahi"
+    ]
+  },
+  "ECUADOR": {
+    "playing11": [
+      "Hernán Galíndez",
+      "Moisés Ramírez",
+      "Gonzalo Valle",
+      "Willian Pacho",
+      "Piero Hincapié",
+      "Joel Ordóñez",
+      "Félix Torres",
+      "Pervis Estupiñán",
+      "Ángelo Preciado",
+      "Jackson Porozo",
+      "Moisés Caicedo"
+    ],
+    "substitutes": [
+      "Jordy Alcívar",
+      "Denil Castillo",
+      "Alan Franco",
+      "Pedro Vite",
+      "Kendry Páez",
+      "Yaimar Medina",
+      "Kevin Rodríguez",
+      "Anthony Valencia",
+      "Enner Valencia"
+    ],
+    "reserves": [
+      "Jordy Caicedo",
+      "Jeremy Arévalo",
+      "Gonzalo Plata",
+      "Alan Minda",
+      "John Yeboah",
+      "Nilson Angulo"
+    ]
+  },
+  "NETHERLANDS": {
+    "playing11": [
+      "Mark Flekken",
+      "Robin Roefs",
+      "Bart Verbruggen",
+      "Nathan Aké",
+      "Denzel Dumfries",
+      "Jorrel Hato",
+      "Lutsharel Geertruida",
+      "Micky van de Ven",
+      "Virgil van Dijk",
+      "Jan Paul van Hecke",
+      "Mats Wieffer"
+    ],
+    "substitutes": [
+      "Frenkie de Jong",
+      "Marten de Roon",
+      "Ryan Gravenberch",
+      "Justin Kluivert",
+      "Teun Koopmeiners",
+      "Tijjani Reijnders",
+      "Guus Til",
+      "Quinten Timber",
+      "Brian Brobbey"
+    ],
+    "reserves": [
+      "Memphis Depay",
+      "Cody Gakpo",
+      "Noa Lang",
+      "Donyell Malen",
+      "Crysencio Summerville",
+      "Wout Weghorst"
+    ]
+  },
+  "JAPAN": {
+    "playing11": [
+      "Hayakawa Tomoki",
+      "Suzuki Zion",
+      "Osako Keisuke",
+      "Nagatomo Yuto",
+      "Taniguchi Shogo",
+      "Tomiyasu Takehiro",
+      "Itakura Ko",
+      "Watanabe Tsuyoshi",
+      "Ito Hiroki",
+      "Suzuki Junnosuke",
+      "Seko Ayumu"
+    ],
+    "substitutes": [
+      "Sugawara Yukinari",
+      "Kamada Daichi",
+      "Sano Kaishu",
+      "Tanaka Ao",
+      "Endo Wataru",
+      "Nakamura Keito",
+      "Doan Ritsu",
+      "Ito Junya",
+      "Kubo Takefusa"
+    ],
+    "reserves": [
+      "Suzuki Yuito",
+      "Ueda Ayase",
+      "Ogawa Koki",
+      "Maeda Daizen",
+      "Shiogai Kento",
+      "Goto Keisuke"
+    ]
+  },
+  "SWEDEN": {
+    "playing11": [
+      "Viktor Johansson",
+      "Kristoffer Nordfeldt",
+      "Jacob Widell Zetterström",
+      "Hjalmar Ekdal",
+      "Gabriel Gudmundsson",
+      "Isak Hien",
+      "Gustaf Lagerbielke",
+      "Victor Lindelöf",
+      "Eric Smith",
+      "Carl Starfelt",
+      "Elliot Stroud"
+    ],
+    "substitutes": [
+      "Daniel Svensson",
+      "Jesper Kalström",
+      "Yasin Ayari",
+      "Mattias Svanberg",
+      "Lucas Bergvall",
+      "Besfort Zeneli",
+      "Herman Johansson",
+      "Taha Ali",
+      "Alexander Bernhardsson"
+    ],
+    "reserves": [
+      "Anthony Elanga",
+      "Viktor Gyökeres",
+      "Alexander Isak",
+      "Gustaf Nilsson",
+      "Benjamin Nygren",
+      "Ken Sema"
+    ]
+  },
+  "TUNISIA": {
+    "playing11": [
+      "Sabri Ben Hessen",
+      "Abdelmouhib Chamakh",
+      "Aymen Dahman",
+      "Ali Abdi",
+      "Adem Arous",
+      "Mohamed Amine Ben Hamida",
+      "Dylan Bronn",
+      "Raed Chikhaoui",
+      "Moutaz Neffati",
+      "Omar Rekik",
+      "Montassar Talbi"
+    ],
+    "substitutes": [
+      "Yan Valery",
+      "Mortadha Ben Ouanes",
+      "Anis Ben Slimane",
+      "Ismael Gharbi",
+      "Rani Khedira",
+      "Mohamed Hadj Mahmoud",
+      "Hannibal Mejbri",
+      "Ellyes Skhiri",
+      "Elias Achouri"
+    ],
+    "reserves": [
+      "Khalil Ayari",
+      "Firas Chaouat",
+      "Rayan Elloumi",
+      "Hazem Mastouri",
+      "Elias Saad",
+      "Sebastian Tounekti"
+    ]
+  },
+  "BELGIUM": {
+    "playing11": [
+      "Thibaut Courtois",
+      "Senne Lammens",
+      "Mike Penders",
+      "Timothy Castagne",
+      "Zeno Debast",
+      "Maxim De Cuyper",
+      "Koni De Winter",
+      "Brandon Mechele",
+      "Thomas Meunier",
+      "Nathan Ngoy",
+      "Joaquin Seys"
+    ],
+    "substitutes": [
+      "Arthur Theate",
+      "Kevin De Bruyne",
+      "Amadou Onana",
+      "Nicolas Raskin",
+      "Youri Tielemans",
+      "Hans Vanaken",
+      "Axel Witsel",
+      "Charles De Ketelaere",
+      "Jeremy Doku"
+    ],
+    "reserves": [
+      "Matias Fernandez Pardo",
+      "Romelu Lukaku",
+      "Dodi Lukebakio",
+      "Diego Moreira",
+      "Alexis Saelemaekers",
+      "Leandro Trossard"
+    ]
+  },
+  "EGYPT": {
+    "playing11": [
+      "Mohamed El Shenawy",
+      "Mostafa Shobeir",
+      "Mohamed Alaa",
+      "Mohamed Hani",
+      "Tarek Alaa",
+      "Hamdy Fathy",
+      "Rami Rabia",
+      "Yasser Ibrahim",
+      "Hossam Abdelmaguid",
+      "Mohamed Abdelmonem",
+      "Ahmed Fotouh"
+    ],
+    "substitutes": [
+      "Karim Hafez",
+      "Marwan Attia",
+      "Mohanad Lasheen",
+      "Nabil Emad",
+      "Mahmoud Saber",
+      "Ahmed Zizo",
+      "Emam Ashour",
+      "Mostafa Ziko",
+      "Mahmoud Trezeguet"
+    ],
+    "reserves": [
+      "Ibrahim Adel",
+      "Haissem Hassan",
+      "Mohamed Salah",
+      "Omar Marmoush",
+      "Aqtay Abdallah",
+      "Hamza Abdelkarim"
+    ]
+  },
+  "IRAN": {
+    "playing11": [
+      "Alireza Beiranvand",
+      "Seyed Hossein Hosseini",
+      "Payam Niazmand",
+      "Danial Eiri",
+      "Ehsan Hajsafi",
+      "Saleh Hardani",
+      "Hossein Kanaani",
+      "Shoja Khalilzadeh",
+      "Milad Mohammadi",
+      "Ali Nemati Omid Noorafkan",
+      "Ramin Rezaeian"
+    ],
+    "substitutes": [
+      "Rouzbeh Cheshmi",
+      "Saeid Ezatolahi",
+      "Mehdi Ghaedi",
+      "Saman Ghoddos",
+      "Mohammad Ghorbani",
+      "Alireza Jahanbakhsh",
+      "Mohammad Mohebi",
+      "Amir Mohammad Razzaghinia",
+      "Mehdi Torabi"
+    ],
+    "reserves": [
+      "Aria Yousefi",
+      "Ali Alipour",
+      "Dennis Dargahi",
+      "Amirhossein Hosseinzadeh",
+      "Mehdi Taremi",
+      "Shahriyar Moghanlou"
+    ]
+  },
+  "NEW ZEALAND": {
+    "playing11": [
+      "Max Crocombe",
+      "Alex Paulsen",
+      "Michael Woud",
+      "Tim Payne",
+      "Francis De Vries",
+      "Tyler Bindon",
+      "Michael Boxall",
+      "Liberato Cacace",
+      "Nando Pijnaker",
+      "Finn Surman",
+      "Callan Elliot"
+    ],
+    "substitutes": [
+      "Tommy Smith",
+      "Joe Bell",
+      "Marko Stamenić",
+      "Alex Rufer",
+      "Ryan Thomas",
+      "Lachlan Bayliss",
+      "Matt Garbett",
+      "Chris Wood",
+      "Sarpreet Singh"
+    ],
+    "reserves": [
+      "Eli Just",
+      "Kosta Barbarouses",
+      "Ben Waine",
+      "Ben Old",
+      "Callum McCowatt",
+      "Jesse Randall"
+    ]
+  },
+  "SPAIN": {
+    "playing11": [
+      "Unai Simón",
+      "David Raya",
+      "Joan Garcia",
+      "Marc Cucurella",
+      "Alejandro Grimaldo",
+      "Pau Cubarsí",
+      "Aymeric Laporte",
+      "Marc Pubill",
+      "Eric García",
+      "Marcos Llorente",
+      "Pedro Porro"
+    ],
+    "substitutes": [
+      "Pedri",
+      "Fabián Ruiz",
+      "Martín Zubimendi",
+      "Gavi",
+      "Rodri",
+      "Álex Baena",
+      "Mikel Merino",
+      "Mikel Oyarzabal",
+      "Dani Olmo"
+    ],
+    "reserves": [
+      "Nico Williams",
+      "Yéremy Pino",
+      "Ferran Torres",
+      "Borja Iglesias",
+      "Víctor Muñoz",
+      "Lamine Yamal"
+    ]
+  },
+  "CAPE VERDE": {
+    "playing11": [
+      "Josimar Dias \"Vozinha\"",
+      "Márcio da Rosa",
+      "Carlos Santos",
+      "Steven Moreira",
+      "Wagner Pina",
+      "João Paulo Fernandes",
+      "Sidny Lopes Cabral",
+      "Logan Costa",
+      "Roberto Lopes \"Pico\"",
+      "Kelvin Pires",
+      "Ianique Tavares \"Stopira\""
+    ],
+    "substitutes": [
+      "Edilson Borges \"Diney\"",
+      "Jamiro Monteiro",
+      "Telmo Arcanjo",
+      "Yannick Semedo",
+      "Laros Duarte",
+      "Deroy Duarte",
+      "Kevin Pina",
+      "Ryan Mendes",
+      "Willy Semedo"
+    ],
+    "reserves": [
+      "Garry Rodrigues",
+      "Jovane Cabral",
+      "Nuno Da Costa",
+      "Dailon Livramento",
+      "Gilson Benchimol",
+      "Hélio Varela"
+    ]
+  },
+  "SAUDI ARABIA": {
+    "playing11": [
+      "Nawaf Al Aqidi",
+      "Mohamed Al Owais",
+      "Ahmed Alkassar",
+      "Saud Abdulhamid",
+      "Jehad Thakri",
+      "Abdulelah Al Amri",
+      "Hassan Tambakti",
+      "Ali Lajami",
+      "Hassan Kadesh",
+      "Moteb Al Harbi",
+      "Nawaf Boushal"
+    ],
+    "substitutes": [
+      "Ali Majrashi",
+      "Mohammed Abu Alshamat",
+      "Ziyad Al Johani",
+      "Nasser Al Dawsari",
+      "Mohomed Kanno",
+      "Abdullah Al Khaibari",
+      "Alaa Al Hejji",
+      "Musab Al Juwayr",
+      "Sultan Mandash"
+    ],
+    "reserves": [
+      "Ayman Yahya",
+      "Khalid Al Ghannam",
+      "Salem Al Dawsari",
+      "Abdullah Al Hamdan",
+      "Feras Al Brikan",
+      "Saleh Al Shehri"
+    ]
+  },
+  "URUGUAY": {
+    "playing11": [
+      "Sergio Rochet",
+      "Fernando Muslera",
+      "Santiago Mele",
+      "Guillermo Varela",
+      "Ronald Araujo",
+      "José María Giménez",
+      "Santiago Bueno",
+      "Sebastián Cáceres",
+      "Mathías Olivera",
+      "Joaquín Piquerez",
+      "Matías Viña"
+    ],
+    "substitutes": [
+      "Manuel Ugarte",
+      "Emiliano Martínez",
+      "Rodrigo Bentancur",
+      "Federico Valverde",
+      "Agustín Canobbio",
+      "Juan Manuel Sanabria",
+      "Giorgan de Arrascaeta",
+      "Nicolás de la Cruz",
+      "Rodrigo Zalazar"
+    ],
+    "reserves": [
+      "Facundo Pellistri",
+      "Maximiliano Araújo",
+      "Brian Rodríguez",
+      "Rodrigo Aguirre",
+      "Federico Viñas",
+      "Darwin Núñez"
+    ]
+  },
+  "FRANCE": {
+    "playing11": [
+      "Mike Maignan",
+      "Brice Samba",
+      "Robin Risser",
+      "Dayot Upamecano",
+      "William Saliba",
+      "Lucas Digne",
+      "Theo Hernandez",
+      "Lucas Hernandez",
+      "Ibrahima Konaté",
+      "Jules Koundé",
+      "Malo Gusto"
+    ],
+    "substitutes": [
+      "Maxence Lacroix",
+      "N'Golo Kanté",
+      "Adrien Rabiot",
+      "Manu Koné",
+      "Aurélien Tchouaméni",
+      "Warren Zaïre-Emery",
+      "Maghnes Akliouche",
+      "Kylian Mbappé",
+      "Ousmane Dembélé"
+    ],
+    "reserves": [
+      "Michael Olise",
+      "Désiré Doué",
+      "Bradley Barcola",
+      "Rayan Cherki",
+      "Marcus Thuram",
+      "Jean-Philippe Mateta"
+    ]
+  },
+  "SENEGAL": {
+    "playing11": [
+      "Édouard Mendy",
+      "Mory Diaw",
+      "Yehvann Diouf",
+      "Krépin Diatta",
+      "Antoine Mendy",
+      "Kalidou Koulibaly",
+      "El Hadji Malick Diouf",
+      "Mamadou Sarr",
+      "Moussa Niakhaté",
+      "Abdoulaye Seck",
+      "Ismaïl Jakobs"
+    ],
+    "substitutes": [
+      "Idrissa Gana Gueye",
+      "Pape Gueye",
+      "Lamine Camara",
+      "Habib Diarra",
+      "Pathé Ciss",
+      "Pape Matar Sarr",
+      "Bara Sapoko Ndiaye",
+      "Sadio Mané",
+      "Ismaïla Sarr"
+    ],
+    "reserves": [
+      "Iliman Ndiaye",
+      "Assane Diao",
+      "Ibrahim Mbaye",
+      "Nicolas Jackson",
+      "Bamba Dieng",
+      "Chérif Ndiaye"
+    ]
+  },
+  "IRAQ": {
+    "playing11": [
+      "Fahad Talib",
+      "Jalal Hassan",
+      "Ahmed Basil",
+      "Hussein Ali",
+      "Manaf Younis",
+      "Zaid Tahseen",
+      "Rebin Sulaka",
+      "Akam Hashem",
+      "Merchas Doski",
+      "Ahmed Yahya",
+      "Zaid Ismail"
+    ],
+    "substitutes": [
+      "Frans Putros",
+      "Mustafa Saadoon",
+      "Amir Al-Ammari",
+      "Kevin Yakob",
+      "Zidane Iqbal",
+      "Aimar Sher",
+      "Ibrahim Bayesh",
+      "Ahmed Qasem",
+      "Youssef Amyn"
+    ],
+    "reserves": [
+      "Marko Farji",
+      "Ali Jassim",
+      "Ali Al-Hamadi",
+      "Ali Youssef",
+      "Aymen Hussein",
+      "Mohanad Ali"
+    ]
+  },
+  "NORWAY": {
+    "playing11": [
+      "Ørjan Nyland",
+      "Egil Selvik",
+      "Sander Tangvik",
+      "Julian Ryerson",
+      "Kristoffer Ajer",
+      "Leo Skiri Østigård",
+      "David Møller Wolfe",
+      "Marcus Holmgren Pedersen",
+      "Torbjørn Heggem",
+      "Fredrik Bjørkan",
+      "Henrik Falchener"
+    ],
+    "substitutes": [
+      "Sondre Langås",
+      "Martin Ødegaard",
+      "Sander Berge",
+      "Patrick Berg",
+      "Kristian Thorstvedt",
+      "Morten Thorsby",
+      "Thelo Aasgaard",
+      "Andreas Schjelderup",
+      "Jens Petter Hauge"
+    ],
+    "reserves": [
+      "Fredrik Aursnes",
+      "Erling Haaland",
+      "Alexander Sørloth",
+      "Jørgen Strand Larsen",
+      "Oscar Bobb",
+      "Antonio Nusa"
+    ]
+  },
+  "ARGENTINA": {
+    "playing11": [
+      "Emiliano Martínez",
+      "Gerónimo Rulli",
+      "Juan Musso",
+      "Gonzalo Montiel",
+      "Nahuel Molina",
+      "Lisandro Martínez",
+      "Nicolás Otamendi",
+      "Leonardo Balerdi",
+      "Cristian Romero",
+      "Facundo Medina",
+      "Nicolás Tagliafico"
+    ],
+    "substitutes": [
+      "Leandro Paredes",
+      "Rodrigo De Paul",
+      "Exequiel Palacios",
+      "Enzo Fernández",
+      "Alexis Mac Allister",
+      "Giovani Lo Celso",
+      "Valentín Barco",
+      "Lionel Messi",
+      "Nicolás Paz"
+    ],
+    "reserves": [
+      "Thiago Almada",
+      "Nicolás González",
+      "Giuliano Simeone",
+      "Lautaro Martínez",
+      "José Manuel López",
+      "Julián Álvarez"
+    ]
+  },
+  "ALGERIA": {
+    "playing11": [
+      "Luca Zidane",
+      "Oussama Benbot",
+      "Melvin Mastil",
+      "Rafik Belghali",
+      "Samir Chergui",
+      "Rayan Aït-Nouri",
+      "Jaouen Hadjam",
+      "Aïssa Mandi",
+      "Ramy Bensebaïni",
+      "Zinedine Belaïd",
+      "Mohamed Amine Tougaï"
+    ],
+    "substitutes": [
+      "Achraf Abada",
+      "Nabil Bentaleb",
+      "Hicham Boudaoui",
+      "Houssem Aouar",
+      "Farès Chaïbi",
+      "Ibrahim Maza",
+      "Yacine Titraoui",
+      "Ramiz Zerrouki",
+      "Mohamed Amine Amoura"
+    ],
+    "reserves": [
+      "Nadhir Benbouali",
+      "Adil Boulbina",
+      "Farès Ghedjemis",
+      "Amine Gouiri",
+      "Anis Hadj Moussa",
+      "Riyad Mahrez"
+    ]
+  },
+  "AUSTRIA": {
+    "playing11": [
+      "Patrick Pentz",
+      "Alexander Schlager",
+      "Florian Wiegele",
+      "David Affengruber",
+      "David Alaba",
+      "Kevin Danso",
+      "Marco Friedl",
+      "Philipp Lienhart",
+      "Phillipp Mwene",
+      "Stefan Posch",
+      "Alexander Prass"
+    ],
+    "substitutes": [
+      "Michael Svoboda",
+      "Christoph Baumgartner",
+      "Carney Chukwuemeka",
+      "Florian Grillitsch",
+      "Konrad Laimer",
+      "Marcel Sabitzer",
+      "Xaver Schlager",
+      "Nicolas Seiwald",
+      "Romano Schmid"
+    ],
+    "reserves": [
+      "Alessandro Schöpf",
+      "Paul Wanner",
+      "Patrick Wimmer",
+      "Marko Arnautović",
+      "Michael Gregoritsch",
+      "Sasa Kalajdzic"
+    ]
+  },
+  "JORDAN": {
+    "playing11": [
+      "Yazid Abulaila",
+      "Abdallah Al Fakhouri",
+      "Nour Bani Attiah",
+      "Mohammad Abualnadi",
+      "Husam Abu Dahab",
+      "Mohammad Abu Hashish",
+      "Yazan Al Arab",
+      "Abdallah Nasib",
+      "Saleem Obaid",
+      "Ehsan Haddad",
+      "Saed Al-Rosan"
+    ],
+    "substitutes": [
+      "Anas Banawi",
+      "Mohannad Abu Taha",
+      "Mohammad Al Dawoud",
+      "Nizar Al Rashdan",
+      "Noor Al Rawabdeh",
+      "Rajaei Ayed",
+      "Amer Jamous",
+      "Ibrahim Sadeh",
+      "Mahmoud Al-Mardi"
+    ],
+    "reserves": [
+      "Mousa Al Tamari",
+      "Odeh Al-Fakhouri",
+      "Mohammad Abu Zrayq",
+      "Ali Azaizeh",
+      "Ali Olwan",
+      "Ibrahim Sabra"
+    ]
+  },
+  "PORTUGAL": {
+    "playing11": [
+      "Diogo Costa",
+      "José Sá",
+      "Rui Silva",
+      "Diogo Dalot",
+      "Matheus Nunes",
+      "Nélson Semedo",
+      "João Cancelo",
+      "Nuno Mendes",
+      "Gonçalo Inácio",
+      "Renato Veiga",
+      "Rúben Dias"
+    ],
+    "substitutes": [
+      "Tomás Araújo",
+      "Rúben Neves",
+      "Samuel Costa",
+      "João Neves",
+      "Vitinha",
+      "Bruno Fernandes",
+      "Bernardo Silva",
+      "João Félix",
+      "Francisco Trincão"
+    ],
+    "reserves": [
+      "Francisco Conceição",
+      "Pedro Neto",
+      "Rafael Leão",
+      "Gonçalo Guedes",
+      "Gonçalo Ramos",
+      "Cristiano Ronaldo"
+    ]
+  },
+  "CONGO DR": {
+    "playing11": [
+      "Timothy Fayulu",
+      "Lionel Mpasi",
+      "Mike Epolo",
+      "Aaron Wan-Bissaka",
+      "Gédéon Kalulu",
+      "Joris Kayembe",
+      "Arthur Masuaku",
+      "Steve Kapuadi",
+      "Rocky Bushiri",
+      "Axel Tuanzebe",
+      "Chancel Mbemba"
+    ],
+    "substitutes": [
+      "Dylan Batubinsika",
+      "Noah Sadiki",
+      "Samuel Moutoussamy",
+      "Edo Kayembe",
+      "Nathan Mukau",
+      "Charles Pickel",
+      "Ngal’ayel Mukau Mbuku",
+      "Brian Cipenga",
+      "Théo Bongonda"
+    ],
+    "reserves": [
+      "Gaël Kakuta",
+      "Meschack Elia",
+      "Fiston Mayele",
+      "Cédric Bakambu",
+      "Simon Banza",
+      "Yoane Wissa"
+    ]
+  },
+  "UZBEKISTAN": {
+    "playing11": [
+      "Utkir Yusupov",
+      "Abduvohid Nematov",
+      "Botirali Ergashev",
+      "Rustam Ashurmatov",
+      "Farrukh Sayfiev",
+      "Khojiakbar Alijonov",
+      "Sherzod Nasrullaev",
+      "Umar Eshmurodov",
+      "Abdukodir Khusanov",
+      "Abdulla Abdullaev",
+      "Bekhruz Karimov"
+    ],
+    "substitutes": [
+      "Jakhongir Urozov",
+      "Avazbek Ulmasaliev",
+      "Otabek Shukurov",
+      "Jaloliddin Masharipov",
+      "Odiljon Hamrobekov",
+      "Oston Urunov",
+      "Jamshid Iskanderov",
+      "Dostonbek Khamdamov",
+      "Abbosbek Fayzullaev"
+    ],
+    "reserves": [
+      "Akmal Mozgovoy",
+      "Azizjon Ganiev",
+      "Sherzod Esanov",
+      "Eldor Shomurodov",
+      "Igor Sergeev",
+      "Azizbek Amonov"
+    ]
+  },
+  "COLOMBIA": {
+    "playing11": [
+      "Camilo Vargas",
+      "David Ospina",
+      "Álvaro Montero",
+      "Johan Mojica",
+      "Devier Machado",
+      "Daniel Muñoz",
+      "Santiago Arias",
+      "Yerry Mina",
+      "Davinson Sánchez",
+      "Jhon Lucumí",
+      "Willer Ditta"
+    ],
+    "substitutes": [
+      "James Rodríguez",
+      "Jefferson Lerma",
+      "Richard Ríos",
+      "Juan Fernando Quintero",
+      "Jorge Carrascal",
+      "Kevin Castaño",
+      "Jaminton Campaz",
+      "Luis Díaz",
+      "Carlos Andrés Gómez"
+    ],
+    "reserves": [
+      "Jhon Córdoba",
+      "Juan Camilo Hernández",
+      "Jhon Arias"
+    ]
+  },
+  "ENGLAND": {
+    "playing11": [
+      "Jordan Pickford",
+      "Dean Henderson",
+      "James Trafford",
+      "Reece James",
+      "Tino Livramento",
+      "Marc Guéhi",
+      "Ezri Konsa",
+      "John Stones",
+      "Jarell Quansah",
+      "Nico O’Reilly",
+      "Dan Burn"
+    ],
+    "substitutes": [
+      "Djed Spence",
+      "Declan Rice",
+      "Elliot Anderson",
+      "Jude Bellingham",
+      "Jordan Henderson",
+      "Morgan Rogers",
+      "Kobbie Mainoo",
+      "Eberechi Eze",
+      "Harry Kane"
+    ],
+    "reserves": [
+      "Ivan Toney",
+      "Ollie Watkins",
+      "Bukayo Saka",
+      "Noni Madueke",
+      "Marcus Rashford",
+      "Anthony Gordon"
+    ]
+  },
+  "CROATIA": {
+    "playing11": [
+      "Dominik Livakovic",
+      "Dominik Kotarski",
+      "Ivor Pandur",
+      "Josko Gvardiol",
+      "Duje Caleta-Car",
+      "Josip Sutalo",
+      "Josip Stanisic",
+      "Marin Pongracic",
+      "Martin Erlic",
+      "Luka Vuskovic",
+      "Luka Modric"
+    ],
+    "substitutes": [
+      "Mateo Kovacic",
+      "Mario Pasalic",
+      "Nikola Vlasic",
+      "Luka Sucic",
+      "Martin Baturina",
+      "Kristijan Jakic",
+      "Petar Sucic",
+      "Nikola Moro",
+      "Toni Fruk"
+    ],
+    "reserves": [
+      "Ivan Perisic",
+      "Andrej Kramaric",
+      "Ante Budimir",
+      "Marco Pasalic",
+      "Petar Musa",
+      "Igor Matanovic"
+    ]
+  },
+  "GHANA": {
+    "playing11": [
+      "Benjamin Asare",
+      "Lawrence Ati-Zigi",
+      "Joseph Anang",
+      "Baba Abdul Rahman",
+      "Derrick Luckassen",
+      "Gideon Mensah",
+      "Marvin Senaya",
+      "Alidu Seidu",
+      "Abdul Mumin",
+      "Jerome Opoku",
+      "Jonas Adjetey"
+    ],
+    "substitutes": [
+      "Kojo Oppong Peprah",
+      "Thomas Partey",
+      "Kamaldeen Sulemana",
+      "Kwasi Sibo",
+      "Augustine Boakye",
+      "Caleb Yirenkyi",
+      "Abdul Fatawu Issahaku",
+      "Elisha Owusu",
+      "Christopher Bonsu Baah"
+    ],
+    "reserves": [
+      "Ernest Nuamah",
+      "Antoine Semenyo",
+      "Brandon Thomas-Asante",
+      "Prince Kwabena Adu",
+      "Iñaki Williams",
+      "Jordan Ayew"
+    ]
+  },
+  "PANAMA": {
+    "playing11": [
+      "Orlando Mosquera",
+      "Luis Mejía",
+      "César Samudio",
+      "César Blackman",
+      "Jorge Gutiérrez",
+      "Amir Murillo",
+      "Fidel Escobar",
+      "Andrés Andrade",
+      "Edgardo Fariña",
+      "José Córdoba",
+      "Eric Davis"
+    ],
+    "substitutes": [
+      "Jiovani Ramos",
+      "Roderick Miller",
+      "Aníbal Godoy",
+      "Adalberto Carrasquilla",
+      "Carlos Harvey",
+      "Cristian Martínez",
+      "José Luis Rodríguez",
+      "Cesar Yanis",
+      "Yoel Bárcenas"
+    ],
+    "reserves": [
+      "Alberto Quintero",
+      "Azarías Londoño",
+      "Ismael Díaz",
+      "Cecilio Waterman",
+      "José Fajardo",
+      "Tomás Rodríguez"
+    ]
+  }
+}

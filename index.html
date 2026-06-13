@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="IntroPage" class="page active">
+      <div class="hero">
+        <button type="button" id="logoBtn" class="logo-btn" aria-label="Click to explore FIFA World Cup matches">
+          <img src="world_cup_logo.png/screen.png" alt="FIFA World Cup Logo" class="round-logo" />
+        </button>
+        <div class="hero-copy">
+          <h1>Match Explorer</h1>
+          <p>Discover fixtures and lineups with a lightweight offline-friendly SPA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="MatchListPage" class="page" aria-hidden="true">
+      <header class="page-header">
+        <button type="button" class="back-btn" data-action="back">Back</button>
+        <h2>Match Schedule</h2>
+      </header>
+      <div id="matchGrid" class="match-grid"></div>
+      <div id="loadingState" class="loading-state" aria-live="polite" hidden>Loading matches…</div>
+    </section>
+
+    <section id="MatchDetailPage" class="page" aria-hidden="true">
+      <header class="page-header">
+        <button type="button" class="back-btn" data-action="back">Back</button>
+        <h2>Match Detail</h2>
+      </header>
+      <div id="detailBody" class="detail-body"></div>
+    </section>
+
+    <section id="RosterPage" class="page" aria-hidden="true">
+      <header class="page-header">
+        <button type="button" class="back-btn" data-action="back">Back</button>
+        <h2 id="rosterTitle">Team Roster</h2>
+      </header>
+      <div id="rosterContent" class="roster-content"></div>
+    </section>
+  </main>
+
+  <div id="audioControls" class="audio-controls" aria-live="polite" aria-hidden="false">
+    <button id="audioPlayPause" type="button" aria-label="Play or pause audio tracks">Play</button>
+    <span id="audioStatus" aria-live="assertive">Audio: stopped</span>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
